@@ -1,5 +1,5 @@
 import './App.css'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect} from 'react'
 
 
 function Timer() {
@@ -55,7 +55,7 @@ function Timer() {
    // if(hour == 13) {
        // hdisplay.innerHTML = "1"
     //}// testing REMOVE IF CAUSING ISSSUES
-    let alt = minutes
+    //let alt = minutes
     setInterval(() => {
         //let ss = Number(mindisplay)
         //mindisplay.innerHTML = String(ss)
@@ -199,7 +199,7 @@ function Timer() {
             alarmText!.innerHTML = "Stop Alarm"
             let alarm = document.getElementById("alarmcon") as HTMLElement
             const selectElement = document.getElementById("mins") as HTMLSelectElement
-            const selectedVal = selectElement.value
+            //const selectedVal = selectElement.value
             const selectedText = selectElement.options[selectElement.selectedIndex].text
             const selectElementH = document.getElementById("Hour") as HTMLSelectElement
             const selectedTextH = selectElementH.options[selectElementH.selectedIndex].text
@@ -207,7 +207,7 @@ function Timer() {
             let hourval = document.getElementById("hour")
             const selectElementT = document.getElementById("ampm") as HTMLSelectElement
             const selectedTextT = selectElementT.options[selectElementT.selectedIndex].text
-            let isPaused = false
+            //let isPaused = false
             console.log("yellows")
             //console.log(minutes)
             console.log(minval)
@@ -215,7 +215,7 @@ function Timer() {
             console.log(selectedTextH)
             console.log(selectedTextT)
             const audio = new Audio('public/sparkle.mpeg')
-            let clicked = 1
+            //let clicked = 1
             const checkt = setInterval(() => {
               if(minval?.innerHTML == selectedText) {
             console.log("we got a match")
