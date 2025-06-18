@@ -214,7 +214,7 @@ function Timer() {
             console.log(selectedText)
             console.log(selectedTextH)
             console.log(selectedTextT)
-            const audio = new Audio('public/sparkle.mpeg')
+            const audio = new Audio('/sparkle.mpeg')
             //let clicked = 1
             const checkt = setInterval(() => {
               if(minval?.innerHTML == selectedText) {
